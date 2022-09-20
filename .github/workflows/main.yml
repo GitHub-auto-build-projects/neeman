@@ -1,0 +1,10 @@
+name: Call iOS Build
+
+on: [push]
+
+jobs:
+  call-workflow-1:
+    uses: GitHub-auto-build-projects/Reusable-Workflows/.github/workflows/BuildIPA.yml@main
+    with:
+      projectname: Neeman
+    secrets: inherit
